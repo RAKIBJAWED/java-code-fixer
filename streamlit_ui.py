@@ -87,6 +87,8 @@ if generate_button:
         st.error("Java code input is empty!")
     elif not st.session_state.execution_result.strip():
         st.error("Java code output is empty! Please run the code first.")
+    elif "✅ Execution successful" in st.session_state.execution_result:
+        st.info("Code executed successfully! No fixes needed.")
     else:
         try:
             if "ANTHROPIC" in llm_model:
