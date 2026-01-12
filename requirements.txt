@@ -12,3 +12,4 @@ websocket-client==1.9.0
 
 streamlit
 anthropic
+python-dotenv

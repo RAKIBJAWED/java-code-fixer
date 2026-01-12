@@ -2,10 +2,10 @@ import streamlit as st
 from runner import run_java
 from java_code_fixer import JavaCodeFixer
 import os
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 # Load environment variables from .env file
-#load_dotenv()
+load_dotenv()
 
 st.title("Java Code Runner")
 
